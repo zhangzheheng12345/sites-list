@@ -16,11 +16,19 @@
 <style>
 * {
   margin: 0px;
-  font-size: 18px;
+  outline-width: 0px;
+  border-width: 0px;
+  font-size: 20px;
+}
+
+:root {
+  padding: 5%;
 }
 
 a {
   text-decoration: none;
+  color: #132949;
+  margin: 2px;
 }
 
 details {
@@ -30,6 +38,6 @@ details {
 
 summary {
   color: #1a1a1a;
-  font-size: 20px;
+  font-size: 22px;
 }
 </style>
