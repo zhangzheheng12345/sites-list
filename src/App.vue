@@ -12,3 +12,24 @@
 
 <script lang="ts" setup>
 </script>
+
+<style>
+* {
+  margin: 0px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+details {
+  color: #2a2a2a;
+  padding: 5px;
+}
+
+summary {
+  color: #1a1a1a;
+  font-size: 20px;
+}
+</style>
