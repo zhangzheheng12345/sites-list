@@ -27,13 +27,13 @@
 
 a {
   text-decoration: none;
-  color: #132949;
-  margin: 2px;
+  color: #15326c;
+  margin: 5px;
 }
 
 details {
   color: #2a2a2a;
-  padding: 5px;
+  padding: 10px;
 }
 
 summary {
