@@ -1,6 +1,7 @@
 export enum TreeNodeType {
   Branch,
-  Leaf
+  Leaf,
+  ChapterSep
 }
 
 export interface TreeBranch {
@@ -15,5 +16,37 @@ export interface TreeLeaf {
 
 export interface TreeNode {
   type: TreeNodeType
-  content: TreeLeaf | TreeBranch
+  content: TreeLeaf | TreeBranch | string
+}
+
+export function ObjectToTree(obj: any): Array<TreeNode> {
+  let res: Array<TreeNode> = []
+  let key: keyof any
+  for (key in obj) {
+    if (typeof obj[key] === 'string') {
+      if ((obj[key] as string) === '-----') {
+        res.push({
+          type: TreeNodeType.ChapterSep,
+          content: key as string
+        })
+      } else {
+        res.push({
+          type: TreeNodeType.Leaf,
+          content: {
+            name: key as string,
+            url: obj[key] as string
+          }
+        })
+      }
+    } else if (typeof obj[key] === 'object') {
+      res.push({
+        type: TreeNodeType.Branch,
+        content: {
+          summary: key as string,
+          sons: ObjectToTree(obj[key])
+        }
+      })
+    }
+  }
+  return res
 }

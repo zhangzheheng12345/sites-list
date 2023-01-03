@@ -1,3 +1,5 @@
+/// <reference types="vitest"/>
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -12,7 +14,12 @@ export default defineConfig({
   plugins: [
     vue(),
     Unocss({
-      presets: [presetUno(), presetIcons()]
+      presets: [
+        presetUno(),
+        presetIcons({
+          cdn: 'https://esm.sh'
+        })
+      ]
     })
   ],
   server: {
@@ -25,5 +32,8 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src')
     }
+  },
+  test: {
+    testTimeout: 2500
   }
 })
