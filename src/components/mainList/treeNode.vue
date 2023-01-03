@@ -12,7 +12,7 @@
     v-else-if="props.content.type === TreeNodeType.Leaf"
     class="hover:scale-102"
   >
-    <a :href="(props.content.content as TreeLeaf).url">{{
+    <a :href="(props.content.content as TreeLeaf).url" target="_blank">{{
       (props.content.content as TreeLeaf).name
     }}</a>
   </div>
