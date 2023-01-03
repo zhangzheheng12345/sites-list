@@ -1,16 +1,11 @@
 <template>
-  <details open>
-    <summary>Frontend</summary>
-    <details open>
-      <summary>Vue</summary>
-      <a href="https://vuejs.org">Vue3 Official</a>
-      <br/>
-      <a href="https://vue3js.cn">Vue3 Official (Chinese)</a>
-    </details>
-  </details>
+  <treeNode :content="sitesData"></treeNode>
 </template>
 
 <script lang="ts" setup>
+import { sitesData } from './ts/sitesData'
+
+import treeNode from './components/treeNode.vue'
 </script>
 
 <style>
@@ -23,21 +18,5 @@
 
 :root {
   padding: 5%;
-}
-
-a {
-  text-decoration: none;
-  color: #15326c;
-  margin: 5px;
-}
-
-details {
-  color: #2a2a2a;
-  padding: 10px;
-}
-
-summary {
-  color: #1a1a1a;
-  font-size: 22px;
 }
 </style>
