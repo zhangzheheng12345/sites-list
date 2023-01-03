@@ -14,6 +14,7 @@ import treeNode from './components/treeNode.vue'
   outline-width: 0px;
   border-width: 0px;
   font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 :root {

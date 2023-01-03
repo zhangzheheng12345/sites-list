@@ -3,7 +3,7 @@ import { TreeNode, TreeNodeType } from './treeNode'
 export const sitesData: TreeNode = {
   type: TreeNodeType.Branch,
   content: {
-    summary: 'Frontend',
+    summary: 'Front End',
     sons: [
       {
         type: TreeNodeType.Branch,
