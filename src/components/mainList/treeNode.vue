@@ -39,10 +39,6 @@ a {
   margin-left: 20px;
 }
 
-a:hover {
-  outline-width: 0px;
-}
-
 details {
   color: #2a2a2a;
   padding: 10px;
@@ -52,5 +48,9 @@ summary {
   color: #1a1a1a;
   font-size: 26px;
   cursor: pointer;
+}
+
+summary:hover {
+  outline: 0px;
 }
 </style>
