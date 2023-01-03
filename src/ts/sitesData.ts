@@ -13,7 +13,9 @@ export const sitesData: Array<TreeNode> = ObjectToTree({
         'Nuxt Official (Chinese)': 'https://nuxt.com.cn',
         'State Management': '-----',
         'Pinia Official': 'https://pinia.vuejs.org',
-        'Pinia Official (Chinese)': 'https://pinia.web3doc.top'
+        'Pinia Official (Chinese)': 'https://pinia.web3doc.top',
+        'Vuex Official': 'https://vuex.vuejs.org',
+        'Vuex Offcial (Chinese)': 'https://vuex.vuejs.org/zh'
       },
       Svelte: {
         'Svelte Official': 'svelte.dev',
@@ -26,7 +28,7 @@ export const sitesData: Array<TreeNode> = ObjectToTree({
       'CSS in HTML': {
         'UnoCSS Document': 'https://uno.antfu.me',
         'Windi CSS Official': 'https://windicss.org',
-        'TAilwind CSS Official': 'https://tailwindcss.com'
+        'Tailwind CSS Official': 'https://tailwindcss.com'
       },
       'Pre-processor': {
         'LESS Official': 'https://lesscss.org',
