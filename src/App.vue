@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { sitesData } from './ts/sitesData'
 
 import treeNode from './components/mainList/treeNode.vue'
@@ -19,5 +19,9 @@ import topBar from './components/topBar.vue'
   border-width: 0px;
   font-size: 20px;
   font-family: 'Noto Sans', sans-serif;
+}
+
+button:hover {
+  outline: 0px;
 }
 </style>

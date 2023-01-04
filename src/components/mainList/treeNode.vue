@@ -16,7 +16,7 @@
   >
     <a
       :href="(props.content.content as TreeLeaf).url"
-      target="_blank"
+      :target="browseMode.browserMode ? '_blank' : ''"
       class="decoration-none ml-20px color-blue-600"
       >{{ (props.content.content as TreeLeaf).name }}</a
     >
@@ -29,12 +29,14 @@
 <script setup lang="ts">
 import type { TreeBranch, TreeLeaf, TreeNode } from '@/ts/treeNode'
 import { TreeNodeType } from '@/ts/treeNode'
+import { useBrowseMode } from '@/ts/browseMode'
 
 import chapterSep from './chapterSep.vue'
 
 const props = defineProps<{
   content: TreeNode
 }>()
+const browseMode = useBrowseMode()
 </script>
 
 <style scoped>
