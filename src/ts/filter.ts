@@ -18,6 +18,12 @@ export function filt(obj: any, filter: (str: string) => boolean) {
 
 export function filtEn(obj: any) {
   return filt(obj, (str: string) => {
-    return !/^[.+] \(Chinese\) $/.test(str)
+    return !/^.+ \(Chinese\)$/.test(str)
+  })
+}
+
+export function filtCn(obj: any) {
+  return filt(obj, (str: string) => {
+    return /^.+ \(Chinese\)$/.test(str)
   })
 }
