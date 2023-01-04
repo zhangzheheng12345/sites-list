@@ -44,12 +44,15 @@ let showMenuMore = ref(false)
 
 const filters = {
   'English only': () => {
+    showMenuMore.value = false
     filter.filter = filtEn
   },
   'Chinese only': () => {
+    showMenuMore.value = false
     filter.filter = filtCn
   },
   All: () => {
+    showMenuMore.value = false
     filter.filter = (str: string) => true
   }
 }
