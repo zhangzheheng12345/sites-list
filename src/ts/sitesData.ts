@@ -11,6 +11,8 @@ export const sitesData: Array<TreeNode> = ObjectToTree({
         SSR: '-----',
         'Nuxt Official': 'https://nuxt.com',
         'Nuxt Official (Chinese)': 'https://nuxt.com.cn',
+        Utilities: '-----',
+        'VueUse Official': 'https://vueuse.org',
         'State Management': '-----',
         'Pinia Official': 'https://pinia.vuejs.org',
         'Pinia Official (Chinese)': 'https://pinia.web3doc.top',

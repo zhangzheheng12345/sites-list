@@ -1,7 +1,9 @@
 <template>
   <div v-if="props.content.type === TreeNodeType.Branch">
-    <details open>
-      <summary>{{ (props.content.content as TreeBranch).summary }}</summary>
+    <details open class="p-10px">
+      <summary class="text-26px cursor-default color-gray-900">
+        {{ (props.content.content as TreeBranch).summary }}
+      </summary>
       <treeNode
         v-for="item in (props.content.content as TreeBranch).sons"
         :content="item"
@@ -12,9 +14,12 @@
     v-else-if="props.content.type === TreeNodeType.Leaf"
     class="hover:scale-102"
   >
-    <a :href="(props.content.content as TreeLeaf).url" target="_blank" class="decoration-none ml-20px">{{
-      (props.content.content as TreeLeaf).name
-    }}</a>
+    <a
+      :href="(props.content.content as TreeLeaf).url"
+      target="_blank"
+      class="decoration-none ml-20px color-blue-600"
+      >{{ (props.content.content as TreeLeaf).name }}</a
+    >
   </div>
   <div v-else-if="props.content.type === TreeNodeType.ChapterSep">
     <chapterSep>{{ props.content.content as string }}</chapterSep>
@@ -33,22 +38,6 @@ const props = defineProps<{
 </script>
 
 <style scoped>
-a {
-  text-decoration: none;
-  color: #0d6cda;
-}
-
-details {
-  color: #2a2a2a;
-  padding: 10px;
-}
-
-summary {
-  color: #1a1a1a;
-  font-size: 26px;
-  cursor: pointer;
-}
-
 summary:hover {
   outline: 0px;
 }
