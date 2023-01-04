@@ -1,15 +1,26 @@
 <template>
   <topBar></topBar>
   <div class="p-5%">
-    <treeNode v-for="item in sitesData" :content="item"></treeNode>
+    <treeNode v-for="item in dataToShow" :content="item"></treeNode>
   </div>
 </template>
 
 <script setup lang="ts">
 import { sitesData } from './ts/sitesData'
 
+import { useFilter } from './ts/filter'
+import { filt } from './ts/filter'
+import { ObjectToTree } from './ts/treeNode'
+
 import treeNode from './components/mainList/treeNode.vue'
-import topBar from './components/topBar.vue'
+import topBar from './components/topBar/topBar.vue'
+import { computed } from '@vue/reactivity'
+
+const filter = useFilter()
+
+const dataToShow = computed(() => {
+  return ObjectToTree(filt(sitesData, filter.filter))
+})
 </script>
 
 <style>

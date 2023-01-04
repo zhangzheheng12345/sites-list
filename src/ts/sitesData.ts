@@ -1,6 +1,6 @@
 import { TreeNode, ObjectToTree } from './treeNode'
 
-export const sitesData: Array<TreeNode> = ObjectToTree({
+export const sitesData = {
   'Front End': {
     'Web Framework': {
       Vue: {
@@ -40,4 +40,4 @@ export const sitesData: Array<TreeNode> = ObjectToTree({
       }
     }
   }
-})
+}

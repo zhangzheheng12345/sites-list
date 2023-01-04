@@ -1,12 +1,13 @@
 import { test, expect, it } from 'vitest'
 
-import { filtEn, filtCn } from '../src/ts/filter'
+import { filt, filtEn, filtCn } from '../src/ts/filter'
 
 const input = {
   a: '',
   'b (Chinese)': '',
   c: {
     d: '',
+    sep: '-----',
     'e (Chinese)': ''
   },
   f: {
@@ -21,18 +22,19 @@ test('Test filtEn', () => {
       d: ''
     }
   }
-  expect(filtEn(input)).toEqual(expected)
+  expect(filt(input, filtEn)).toEqual(expected)
 })
 
 test('Test filtCn', () => {
   const expected = {
     'b (Chinese)': '',
     c: {
+      sep: '-----',
       'e (Chinese)': ''
     },
     f: {
       'g (Chinese)': ''
     }
   }
-  expect(filtCn(input)).toEqual(expected)
+  expect(filt(input, filtCn)).toEqual(expected)
 })
