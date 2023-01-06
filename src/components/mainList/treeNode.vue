@@ -1,6 +1,6 @@
 <template>
   <div v-if="props.content.type === TreeNodeType.Branch">
-    <details open class="p-10px">
+    <details open class="p-10px pl-20px">
       <summary class="text-26px cursor-default color-gray-900">
         {{ (props.content.content as TreeBranch).summary }}
       </summary>
