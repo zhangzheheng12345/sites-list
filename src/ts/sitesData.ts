@@ -26,6 +26,26 @@ export const sitesData = {
         'SvelteKit Official': 'https://kit.svelte.dev'
       }
     },
+    'Dev & Build': {
+      Vite: {
+        'Vite Official': 'https://vitejs.dev',
+        'Vite Official (Chinese)': 'https://cn.vitejs.dev',
+        SSG: '-----',
+        'VitePress Official': 'https://vitepress.vuejs.org',
+        'VitePress Official (Chinese)': 'https://vitepress.docschina.org/',
+        'ViteSSG Repo': 'https://github.com/antfu/vite-ssg',
+        Test: '-----',
+        'Vitest Official': 'https://vitest.dev',
+        'Vitest Official (Chinese)': 'cn.vitest.dev'
+      },
+      'Webpack Official': 'https://webpack.js.org',
+      'Webpack Official (Chinese)': 'https://www.webpackjs.com',
+      'Rollup Official': 'https://rollupjs.org',
+      'Rollup Official (Chinese)': 'https://www.rollupjs.com',
+      'esbuild Official': 'https://esbuild.github.io',
+      'esbuild Official (Chinese)': 'https://esbuild.docschina.org',
+      'SWC Official': 'https://swc.rs'
+    },
     CSS: {
       'CSS in HTML': {
         'UnoCSS Document': 'https://uno.antfu.me',
