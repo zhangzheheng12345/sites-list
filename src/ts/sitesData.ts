@@ -1,5 +1,3 @@
-import { TreeNode, ObjectToTree } from './treeNode'
-
 export const sitesData = {
   'Front End': {
     'Web Framework': {
@@ -63,3 +61,9 @@ export const sitesData = {
     }
   }
 }
+
+
+export const sitesLogos = new Map([
+  ['Vue', 'i-logos-vue'],
+  ['Svelte', 'i-logos-svelte']
+])

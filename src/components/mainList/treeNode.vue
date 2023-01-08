@@ -8,6 +8,7 @@
         v-for="item in (props.content.content as TreeBranch).sons"
         :content="item"
       ></treeNode>
+      <span v-if="sitesLogos.has((props.content.content as TreeBranch).summary)" :class="[sitesLogos.get((props.content.content as TreeBranch).summary)]"></span>
     </details>
   </div>
   <div
@@ -30,6 +31,7 @@
 import type { TreeBranch, TreeLeaf, TreeNode } from '@/ts/treeNode'
 import { TreeNodeType } from '@/ts/treeNode'
 import { useBrowseMode } from '@/ts/browseMode'
+import { sitesLogos } from '@/ts/sitesData'
 
 import chapterSep from './chapterSep.vue'
 
