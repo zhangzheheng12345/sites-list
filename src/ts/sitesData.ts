@@ -40,6 +40,8 @@ export const sitesData = {
       },
       'Webpack Official': 'https://webpack.js.org',
       'Webpack Official (Chinese)': 'https://www.webpackjs.com',
+      'unbuild Repo': 'https://github.com/unjs/unbuild',
+      'tsup Official': 'https://tsup.egoist.dev',
       'Rollup Official': 'https://rollupjs.org',
       'Rollup Official (Chinese)': 'https://www.rollupjs.com',
       'esbuild Official': 'https://esbuild.github.io',

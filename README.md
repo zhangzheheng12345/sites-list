@@ -14,6 +14,8 @@ Click the filter-like icon to choose to get only English or Chinese websites. Ch
 
 ## More
 
+The whole list of links is in `src/ts/sitesData.ts` in form of JSON.
+
 Much more links will be added to the list, and the features of searching and user-defined selections are expected to be support in the future.
 
 This site is built using Vite, Vue3, and UnoCSS. Deployment powered by Netlify.
