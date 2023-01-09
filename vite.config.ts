@@ -15,7 +15,9 @@ export default defineConfig({
     vue(),
     Unocss({
       presets: [
-        presetUno(),
+        presetUno({
+          safelist: 'i-logos-vue i-logos-svelte'.split(' ')
+        }),
         presetIcons({
           scale: 1.4,
           cdn: 'https://esm.sh'
