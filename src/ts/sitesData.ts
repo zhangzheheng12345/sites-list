@@ -59,6 +59,16 @@ export const sitesData = {
         'SASS Official (Chinese)': 'https://www.sass.hk'
       }
     }
+  },
+  'Other Resources': {
+    'Fonts': {
+      'Google Fonts Official': 'https://fonts.google.com',
+      'Google Fonts Official (Chinese)': 'https://www.googlefonts.cn'
+    },
+    'Icons': {
+      'Iconify Offcial': 'https://iconify.design',
+      'Iconduck Official': 'https!//iconduck.com'
+    }
   }
 }
 
