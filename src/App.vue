@@ -1,6 +1,6 @@
 <template>
   <topBar></topBar>
-  <div class="p-5%">
+  <div class="p-5% dark:bg-gray-800">
     <treeNode v-for="item in dataToShow" :content="item"></treeNode>
   </div>
 </template>
@@ -26,6 +26,7 @@ const dataToShow = computed(() => {
 <style>
 * {
   margin: 0px;
+  padding: 0px;
   outline-width: 0px;
   border-width: 0px;
   font-size: 20px;

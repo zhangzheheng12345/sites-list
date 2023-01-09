@@ -1,7 +1,7 @@
 <template>
   <div v-if="props.content.type === TreeNodeType.Branch">
-    <details open class="p-10px pl-20px">
-      <summary class="text-26px cursor-default color-gray-900">
+    <details open class="p-10px pl-20px color-gray-900 dark:color-white">
+      <summary class="text-26px cursor-default color-gray-900 dark:color-white">
         {{ (props.content.content as TreeBranch).summary }}
       </summary>
       <treeNode
@@ -18,7 +18,7 @@
     <a
       :href="(props.content.content as TreeLeaf).url"
       :target="browseMode.browserMode ? '_blank' : ''"
-      class="decoration-none ml-20px color-blue-600"
+      class="decoration-none ml-20px color-blue-600 dark:color-blue-500"
       >{{ (props.content.content as TreeLeaf).name }}</a
     >
   </div>
