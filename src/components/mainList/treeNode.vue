@@ -8,7 +8,10 @@
         v-for="item in (props.content.content as TreeBranch).sons"
         :content="item"
       ></treeNode>
-      <span v-if="sitesLogos.has((props.content.content as TreeBranch).summary)" :class="[sitesLogos.get((props.content.content as TreeBranch).summary)]"></span>
+      <span
+        v-if="sitesLogos.has((props.content.content as TreeBranch).summary)"
+        :class="[sitesLogos.get((props.content.content as TreeBranch).summary)]"
+      ></span>
     </details>
   </div>
   <div
@@ -18,7 +21,7 @@
     <a
       :href="(props.content.content as TreeLeaf).url"
       :target="browseMode.browserMode ? '_blank' : ''"
-      class="decoration-none ml-20px color-blue-600 dark:color-blue-500"
+      class="decoration-none ml-20px color-blue-600 dark:color-blue-400"
       >{{ (props.content.content as TreeLeaf).name }}</a
     >
   </div>
