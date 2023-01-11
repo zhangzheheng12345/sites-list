@@ -27,6 +27,7 @@
       title="https://github.com/zhangzheheng12345/sites-list"
     ></a>
   </div>
+  <div class="w-100% h-1px bg-white dark:bg-zinc-700"></div>
 </template>
 
 <script setup lang="ts">
