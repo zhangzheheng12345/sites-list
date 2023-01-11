@@ -1,5 +1,6 @@
 export const sitesData = {
   'Front End': {
+    'MDN Official': 'https://developer.mozilla.org',
     'Web Framework': {
       Vue: {
         'Vue Official': 'https://vuejs.org',
