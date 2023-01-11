@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-gray-9 color-white p-8px justify-end">
+  <div class="flex bg-zinc-900 color-white p-8px justify-end">
     <button
       @click="showMenuMore = !showMenuMore"
       class="i-mdi-filter text-inherit"
@@ -8,7 +8,6 @@
     <div v-if="showMenuMore" class="absolute right-10px top-50px p-0 m-0">
       <menuMore :items="filters"></menuMore>
     </div>
-
     <button
       @click="browseMode.toggle()"
       class="text-inherit mr-15px"

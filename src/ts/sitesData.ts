@@ -61,17 +61,17 @@ export const sitesData = {
     }
   },
   'Other Resources': {
-    'Fonts': {
+    Fonts: {
       'Google Fonts Official': 'https://fonts.google.com',
       'Google Fonts Official (Chinese)': 'https://www.googlefonts.cn'
     },
-    'Icons': {
+    Icons: {
+      'Icones Official': 'https://icones.js.org',
       'Iconify Offcial': 'https://iconify.design',
       'Iconduck Official': 'https!//iconduck.com'
     }
   }
 }
-
 
 export const sitesLogos = new Map([
   ['Vue', 'i-logos-vue'],

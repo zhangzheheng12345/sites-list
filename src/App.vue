@@ -1,6 +1,6 @@
 <template>
   <topBar></topBar>
-  <div class="p-5% dark:bg-gray-800">
+  <div class="p-5% dark:bg-zinc-900">
     <treeNode v-for="item in dataToShow" :content="item"></treeNode>
   </div>
 </template>
