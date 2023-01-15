@@ -1,17 +1,17 @@
 <template>
   <div v-if="props.content.type === TreeNodeType.Branch">
     <details open class="p-10px pl-20px color-gray-900 dark:color-white">
-      <summary class="text-26px cursor-default color-gray-900 dark:color-white">
+      <summary class="flex text-26px cursor-default color-gray-900 dark:color-white">
         {{ (props.content.content as TreeBranch).summary }}
+        <span
+          v-if="sitesLogos.has((props.content.content as TreeBranch).summary)"
+          :class="[sitesLogos.get((props.content.content as TreeBranch).summary)]"
+        ></span>
       </summary>
       <treeNode
         v-for="item in (props.content.content as TreeBranch).sons"
         :content="item"
       ></treeNode>
-      <span
-        v-if="sitesLogos.has((props.content.content as TreeBranch).summary)"
-        :class="[sitesLogos.get((props.content.content as TreeBranch).summary)]"
-      ></span>
     </details>
   </div>
   <div
