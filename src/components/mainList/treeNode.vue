@@ -6,6 +6,7 @@
         <span
           v-if="sitesLogos.has((props.content.content as TreeBranch).summary)"
           :class="[sitesLogos.get((props.content.content as TreeBranch).summary)]"
+          class="text-inherit"
         ></span>
       </summary>
       <treeNode
