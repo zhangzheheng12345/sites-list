@@ -1,5 +1,5 @@
 <template>
-  <div :class>
+  <div>
     <topBar></topBar>
     <div class="p-5% dark:bg-zinc-900">
       <treeNode v-for="item in dataToShow" :content="item"></treeNode>
@@ -13,7 +13,6 @@ import { sitesData } from './ts/sitesData'
 import { useFilter } from './ts/filter'
 import { filt } from './ts/filter'
 import { ObjectToTree } from './ts/treeNode'
-import { isDark } from './ts/isDark'
 
 import treeNode from './components/mainList/treeNode.vue'
 import topBar from './components/topBar/topBar.vue'
