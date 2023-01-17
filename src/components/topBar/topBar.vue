@@ -5,12 +5,12 @@
       class="i-mdi-filter text-inherit"
       title="Filt sites"
     ></button>
-    <div v-if="showMenuMore" class="absolute right-10px top-50px p-0 m-0">
+    <div v-if="showMenuMore" class="absolute right-40px top-50px p-0 m-0">
       <menuMore :items="filters"></menuMore>
     </div>
     <button
       @click="browseMode.toggle()"
-      class="text-inherit mr-15px"
+      class="text-inherit"
       :class="browseMode.browserMode ? 'i-mdi-eye' : 'i-mdi-jump'"
       :title="
         browseMode.browserMode ? 'Toggle to jump mode' : 'Toggle to browse mode'
