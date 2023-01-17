@@ -10,7 +10,7 @@
     </div>
     <button
       @click="browseMode.toggle()"
-      class="text-inherit"
+      class="text-inherit mr-5px"
       :class="browseMode.browserMode ? 'i-mdi-eye' : 'i-mdi-jump'"
       :title="
         browseMode.browserMode ? 'Toggle to jump mode' : 'Toggle to browse mode'
