@@ -16,7 +16,6 @@ export default defineConfig({
     Unocss({
       presets: [
         presetUno({
-          dark: 'media',
           safelist: 'i-logos-vue i-logos-svelte'.split(' ')
         }),
         presetIcons({
