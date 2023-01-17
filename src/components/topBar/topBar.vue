@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-zinc-900 color-white p-8px justify-end">
+  <div class="flex p-8px justify-end">
     <button
       @click="showMenuMore = !showMenuMore"
       class="i-mdi-filter text-inherit"
@@ -26,7 +26,7 @@
       title="https://github.com/zhangzheheng12345/sites-list"
     ></a>
   </div>
-  <div class="w-100% h-1px bg-white dark:bg-zinc-700"></div>
+  <div class="w-100% h-1px bg-zinc-700"></div>
 </template>
 
 <script setup lang="ts">

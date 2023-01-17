@@ -1,8 +1,8 @@
 <template>
-  <div v-for="(value, key) in props.items" class="bg-gray-900">
+  <div v-for="(value, key) in props.items" class="border-1px border-zinc-700">
     <button
       @click="value"
-      class="box-border text-16px bg-gray-900 text-white p-5px w-100% hover:bg-zinc-700"
+      class="box-border text-16px text-white p-5px w-100% hover:bg-zinc-700"
     >
       {{ key }}
     </button>
