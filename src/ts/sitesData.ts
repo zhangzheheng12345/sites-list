@@ -59,6 +59,11 @@ export const sitesData = {
         'SASS Official': 'https://sass-lang.com',
         'SASS Official (Chinese)': 'https://www.sass.hk'
       }
+    }，
+    'Doc in Comment': {
+      TSDoc: 'https://tsdoc.bootcss.com',
+      JSDoc: 'https://jsdoc.app',
+      'JSDoc (Chinese)': 'https://www.jsdoc.com.cn'
     }
   },
   'Other Resources': {
