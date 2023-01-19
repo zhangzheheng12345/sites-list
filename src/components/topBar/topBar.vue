@@ -2,7 +2,7 @@
   <div class="flex p-8px justify-end dark:bg-zinc-900 dark:color-white">
     <button
       @click="showMenuMore = !showMenuMore"
-      class="i-mdi-filter text-inherit"
+      class="i-carbon-filter text-inherit"
       title="Filt sites"
     ></button>
     <div v-if="showMenuMore" class="absolute right-40px top-50px p-0 m-0">
