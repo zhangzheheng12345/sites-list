@@ -53,7 +53,7 @@ export const sitesData = {
         'Windi CSS Official': 'https://windicss.org',
         'Tailwind CSS Official': 'https://tailwindcss.com'
       },
-      'Pre-processor': {
+      'CSS Pre-processor': {
         'Stylus Official': 'https://stylus-lang.com',
         'Stylus Official (Chinese)': 'https://www.stylus-lang.cn',
         'LESS Official': 'https://lesscss.org',
@@ -61,7 +61,7 @@ export const sitesData = {
         'SASS Official': 'https://sass-lang.com',
         'SASS Official (Chinese)': 'https://www.sass.hk'
       }
-    }，
+    },
     'Doc in Comment': {
       TSDoc: 'https://tsdoc.bootcss.com',
       JSDoc: 'https://jsdoc.app',
