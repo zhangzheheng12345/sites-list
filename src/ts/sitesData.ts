@@ -54,6 +54,8 @@ export const sitesData = {
         'Tailwind CSS Official': 'https://tailwindcss.com'
       },
       'Pre-processor': {
+        'Stylus Official': 'https://stylus-lang.com',
+        'Stylus Official (Chinese)': 'https://www.stylus-lang.cn',
         'LESS Official': 'https://lesscss.org',
         'LESS Official (Chinese)': 'https://less.bootcss.com',
         'SASS Official': 'https://sass-lang.com',
